@@ -1,0 +1,26 @@
+# Project configuration. Loaded by src/config.py.
+
+paths:
+  data_processed: "data/processed"
+
+statsbomb:
+  competition_id: 49       # NWSL
+  season_id: 107             # 2023 season, the only free NWSL season currently available
+  team_name: "NJ/NY Gotham FC"   # exact StatsBomb naming, NOT "Gotham FC"
+
+season_windows:
+  # Gotham FC's real 2023 "worst-to-first" story: they started poorly and
+  # surged during the second half of the season en route to the title.
+  # These dates bound the two windows compared in formation.compare_windows.
+  # Confirmed against the real match list in notebooks/00_exploration.ipynb
+  # before relying on them anywhere else; update if that exploration finds
+  # a more precise inflection point.
+  early_season:
+    start_date: "2023-03-01"
+    end_date: "2023-06-30"
+  title_run:
+    start_date: "2023-09-01"
+    end_date: "2023-11-12"
+
+model:
+  random_state: 42
