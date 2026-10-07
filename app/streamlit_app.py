@@ -2,8 +2,9 @@
 
 Run with: streamlit run app/streamlit_app.py
 
-Reads only the cached outputs of src/pipeline.py. Run `python -m src.pipeline`
-at least once first; otherwise the app shows a message saying so.
+Reads only the cached outputs of src/pipeline.py. The tables it needs are
+committed to the repo; `python -m src.pipeline` regenerates them (if any are
+missing, the app shows a message saying so).
 Every sentence that states a result is computed from those cached tables.
 """
 from __future__ import annotations

@@ -1,8 +1,21 @@
 # Data: never commit downloaded datasets, even public ones (repo size + licensing)
 data/external/
-data/processed/
 data/raw/
 !data/**/.gitkeep
+
+# Pipeline caches stay local too, except the tables the Streamlit app reads,
+# so the deployed app runs from a clone (see README, Deploying the app)
+data/processed/*
+!data/processed/scored_shots.parquet
+!data/processed/holdout_metrics.parquet
+!data/processed/calibration.parquet
+!data/processed/side_summary.parquet
+!data/processed/player_finishing.parquet
+!data/processed/team_table.parquet
+!data/processed/match_series.parquet
+!data/processed/season_tests.parquet
+!data/processed/formation_comparison.parquet
+!data/processed/formation_avg_positions.parquet
 
 # Python
 __pycache__/

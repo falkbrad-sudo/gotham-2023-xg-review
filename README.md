@@ -107,6 +107,16 @@ python -m src.figures           # writes reports/figures/
 streamlit run app/streamlit_app.py
 ```
 
+### Deploying the app
+
+The app makes no network calls: it reads ten cached tables from
+`data/processed/` that are committed to the repo (whitelisted in `.gitignore`).
+To deploy on [Streamlit Community Cloud](https://share.streamlit.io):
+**Create app** → this repo, branch `main`, main file `app/streamlit_app.py`,
+and under **Advanced settings** choose Python 3.11 (the version CI tests).
+After re-running the pipeline, commit the updated tables so the deployed app
+matches the Results.
+
 ## Testing
 
 ```bash
