@@ -36,6 +36,12 @@ On the 568 held-out Gotham shots for and against (50 goals):
 
 The enhanced model is well calibrated: in 5 equal-count bins its predicted and observed goal rates agree within about 1 percentage point. StatsBomb's own model ranks shots somewhat better but predicts about 10 goals too many on these shots.
 
+<img src="reports/figures/calibration.png" alt="Calibration of the enhanced model on held-out Gotham shots: predicted xG against observed goal rate in five bins, close to the diagonal" width="420">
+
+![Gotham's shots on the pitch, colored by basic and enhanced xG, with goals as stars](reports/figures/shot_maps.png)
+
+Adding defender and keeper positions mostly re-sorts shots from the same areas: shots with an open lane or a keeper off their line move up, crowded ones move down.
+
 ### Season, match by match
 
 ![xG created and conceded per match, with the early-season and title-run windows](reports/figures/match_xg.png)
@@ -58,7 +64,10 @@ The 95% plausible range for the team's own 341 shots is 17 to 36 goals; it score
 
 ### Team shape (descriptive)
 
-Average position per outfield player (10+ touches) from event locations, early season vs. title run: team length 41.5 to 33.5 m, width 37.4 to 49.6 m (21 and 19 players). This is a pooled description with no significance test. A per-match version of the question in the companion project `entropy-of-transition` (Welch's t-tests, Bonferroni-corrected, different windows and player selection) finds no robust change in Gotham's 2023 shape, so read these numbers as a description, not evidence that the shape changed.
+Average position per outfield player (10+ touches) from event locations, early season vs. title run: team length 41.5 to 33.5 m, width 37.4 to 49.6 m (21 and 19 players). This is a pooled description with no significance test.
+
+![Average outfield positions of Gotham players, early season and title run](reports/figures/team_shape.png)
+ A per-match version of the question in the companion project `entropy-of-transition` (Welch's t-tests, Bonferroni-corrected, different windows and player selection) finds no robust change in Gotham's 2023 shape, so read these numbers as a description, not evidence that the shape changed.
 
 ## Limitations
 

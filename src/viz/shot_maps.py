@@ -28,7 +28,7 @@ def plot_comparison_shot_maps(shots: pd.DataFrame) -> plt.Figure:
         make_pitch().draw(ax=ax)
         goals = shots[shots.get("is_goal", 0) == 1]
         misses = shots[shots.get("is_goal", 0) != 1]
-        ax.scatter(
+        points = ax.scatter(
             misses["x"], misses["y"], c=misses[col], cmap="Reds", s=50, marker="o",
             edgecolors="black", linewidths=0.4, vmin=0, vmax=vmax,
         )
@@ -38,5 +38,7 @@ def plot_comparison_shot_maps(shots: pd.DataFrame) -> plt.Figure:
                 edgecolors="black", linewidths=0.7, vmin=0, vmax=vmax,
             )
         ax.set_title(label)
-    fig.tight_layout()
+    fig.subplots_adjust(left=0.01, right=0.9, wspace=0.04)
+    colorbar_axis = fig.add_axes((0.92, 0.2, 0.012, 0.6))
+    fig.colorbar(points, cax=colorbar_axis, label="xG (goal probability)")
     return fig
