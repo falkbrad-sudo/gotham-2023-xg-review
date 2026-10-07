@@ -25,7 +25,7 @@ This project reviews one team's season (NJ/NY Gotham FC, 2023 NWSL) with an xG m
 - Fewest shots conceded per match in the league (9.1) at the highest xG per shot conceded (0.105). In attack, 2nd-lowest xG per shot (0.076).
 - Goals vs. xG: 26 vs. 26.0 scored, 24 vs. 23.8 conceded; all 7 players with 15+ shots within their plausible range.
 - Early season vs. title run (13 vs. 8 matches): xG conceded per match 1.07 to 0.78 (p = 0.013), xG difference -0.16 to +0.32 (p = 0.027). Neither clears the 0.01 threshold.
-- Outfield shape (pooled averages, descriptive only, no significance test): length 41.5m to 33.5m, width 37.4m to 49.6m. A per-match test in the companion `entropy-of-transition` project finds no robust change, so do not present these numbers as a demonstrated change in shape.
+- Outfield shape (pooled averages, descriptive only, no significance test): length 41.5m to 33.5m, width 37.4m to 49.6m. A per-match test in the companion [entropy-of-transition](https://github.com/falkbrad-sudo/entropy-of-transition) project finds no robust change, so do not present these numbers as a demonstrated change in shape.
 
 ## Code conventions
 

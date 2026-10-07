@@ -67,7 +67,7 @@ The 95% plausible range for the team's own 341 shots is 17 to 36 goals; it score
 Average position per outfield player (10+ touches) from event locations, early season vs. title run: team length 41.5 to 33.5 m, width 37.4 to 49.6 m (21 and 19 players). This is a pooled description with no significance test.
 
 ![Average outfield positions of Gotham players, early season and title run](reports/figures/team_shape.png)
- A per-match version of the question in the companion project `entropy-of-transition` (Welch's t-tests, Bonferroni-corrected, different windows and player selection) finds no robust change in Gotham's 2023 shape, so read these numbers as a description, not evidence that the shape changed.
+ A per-match version of the question in the companion project [entropy-of-transition](https://github.com/falkbrad-sudo/entropy-of-transition) (Welch's t-tests, Bonferroni-corrected, different windows and player selection) finds no robust change in Gotham's 2023 shape, so read these numbers as a description, not evidence that the shape changed.
 
 ## Limitations
 
